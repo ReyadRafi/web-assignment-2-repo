@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+.noto-serif-font{
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+body{
+    background-color: rgb(245, 248, 255);
+}
+/* Navbar styles */
+nav{
+    align-items: center;
+}
+.navbar{
+    justify-content: space-between;
+    margin: 0 150px;
+    margin-top: 30px;
+    margin-bottom: 120px;
+}
+.nav-item{
+    color: rgba(137, 135, 161, 1);
+    align-items: center;
+} 
+.nav-links{
+    gap: 40px;
+}
+.brand{
+    font-size: 3rem;
+    font-weight: 600;
+    color: rgba(233, 90, 8, 1);
+}
+
+
+/* shared style */
+.display-flex{
+    display: flex;
+}
+.color-orange{
+    color: rgba(233, 90, 8, 1);
+}
+.color-gray{
+    color: rgba(137, 135, 161, 1);
+}
+
+
+/* banner styles */
+.banner{
+    display: flex;
+    margin: 0 150px;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 120px;
+}
+.banner-title{
+    font-size: 3rem;
+    margin-bottom: 13px;
+}
+.banner-subtitle{
+    max-width: 600px;
+}
+
+/* Our plants */
+.our-plants{
+    text-align: center;
+}
+.our-plants-title{
+    font-size: 2rem;
+}
+.our-plants-subtitle{
+    margin-bottom: 49px;
+    max-width: 570px;
+    margin: 0 auto 49px;
+}
+
+.cart{
+    display: grid;
+    grid-template-columns: ;
+}
