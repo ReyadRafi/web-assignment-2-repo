@@ -12,7 +12,9 @@
 body{
     background-color: rgb(245, 248, 255);
 }
+
 /* Navbar styles */
+
 nav{
     align-items: center;
 }
@@ -24,7 +26,6 @@ nav{
 }
 .nav-item{
     color: rgba(137, 135, 161, 1);
-    align-items: center;
 } 
 .nav-links{
     gap: 40px;
@@ -36,10 +37,64 @@ nav{
 }
 .website-name{
     color: rgba(134, 168, 202, 0.725);
+    font-size: 3rem;
+}
+.cart-icon{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+
+/* responsive */
+
+@media only screen and (max-width: 576px) {
+
+.navbar
+    .nav-item{
+        display: none;
+    }
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 20px 60px;
+    gap: 20px;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+
+  .nav-item {
+    /* text-align: center; */
+    font-size: 1rem;
+  }
+
+  .brand,
+  .website-name {
+    font-size: 2rem;
+    /* text-align: center; */
+  }
+
+  .cart-icon {
+    justify-content: space-between;
+  }
 }
 
 
 /* shared style */
+
 .display-flex{
     display: flex;
 }
@@ -50,8 +105,8 @@ nav{
     color: rgba(137, 135, 161, 1);
 }
 
-
 /* banner styles */
+
 .banner{
     display: flex;
     margin: 0 150px;
@@ -67,7 +122,35 @@ nav{
     max-width: 600px;
 }
 
+
+/* responsive */
+
+
+@media only screen and (max-width: 576px) {
+  .banner {
+    flex-direction: column-reverse;
+    margin: 0 20px 60px;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .banner-title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-align: left;
+    width: 100%;
+  }
+
+  .banner-subtitle {
+    max-width: 100%;
+    font-size: 1rem;
+    text-align: left;
+  }
+}
+
+
 /* Our plants */
+
 .our-plants{
     text-align: center;
 }
@@ -114,7 +197,23 @@ nav{
 }
 
 
+/* responsive */
+
+@media screen and (max-width: 576px) {
+        .cart{
+            grid-template-columns: repeat(2, 1fr);
+            max-width: 100%;
+            margin: 0 14px;
+        }
+}
+.our-plants-subtitle{
+    padding-left: 14px;
+    padding-right: 14px;
+}
+
+
 /* Flower lover styles */
+
 .Flower-Lover{
     display: flex;
     align-items: center;
@@ -140,7 +239,35 @@ nav{
    position: absolute;
 }
 
+
+/* responsive */
+
+@media screen and (max-width: 576px) {
+  .Flower-Lover {
+    flex-direction: column;
+    align-items: center;
+    margin: 60px 20px;
+    gap: 30px;
+    text-align: center;
+  }
+  .Flower-Lover-title {
+    font-size: 2rem;
+  }
+  .Flower-Lover-subtitle {
+    max-width: 100%;
+    font-size: 1rem;
+    text-align: justify;
+    padding: 0 10px;
+    margin: 0 20px;
+  }
+  .trusted-badge {
+   display: none;
+  }
+}
+
+
 /* Latest deals styles */
+
 .latest-deals{
     text-align: center;
     margin: 0 150px;
@@ -225,6 +352,73 @@ nav{
     margin-left: 300px;
 }
 
+
+/* responsive */
+
+@media screen and (max-width: 576px) {
+  .latest-deals {
+    margin: 0 20px 40px;
+    text-align: center;
+  }
+
+  .latest-deals-title {
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+  }
+
+  .latest-deals-subtitle {
+    max-width: 100%;
+    padding: 0 10px;
+    font-size: 0.95rem;
+  }
+
+  .three-photo {
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 60px;
+  }
+
+  .collage-1,
+  .collage-2 {
+    width: 400px;
+    height: 300px;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  .collage-1-title,
+  .collage-2-title {
+    padding-top: 130px;
+    font-size: 1.5rem;
+  }
+  .collage-1-subtitle,
+  .collage-2-subtitle {
+    margin-left: 160px;
+    font-size: 1rem;
+  }
+
+  .collage-3 {
+    width: 400px;
+    height: 300px;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+    margin-top: 0;
+  }
+  .collage-3-title {
+    margin-top: 130px;
+    font-size: 1.5rem;
+  }
+  .collage-3-subtitle {
+    margin-left: 160px;
+    font-size: 1rem;
+  }
+}
+
+
 /* colorful bunch styles */
 
 .colorful-bunch{
@@ -236,7 +430,6 @@ nav{
     background-image: url(../assets/news-letter-bg.png);
     height: 533px;
 }
-
 .colorful-bunch-title{
     font-size: 2rem;
     color: white;
@@ -272,21 +465,109 @@ input[type="email"]{
 }
 
 
+/* responsive */
+
+@media screen and (max-width: 576px) {
+  .colorful-bunch {
+    padding: 20px;
+    background-size: cover;
+    background-position: center;
+    height: auto;
+    margin-bottom: 60px;
+  }
+
+  .colorful-bunch-title {
+    font-size: 1.5rem;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+  }
+
+  .colorful-bunch-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 60px;
+  }
+
+  input[type="email"] {
+    width: 100%;
+    max-width: 300px;
+    margin-right: 0;
+  }
+
+  .btn-subscribe {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
 
 /* footer styles */
 
 .footer{
     display: flex;
-    gap: 100px;
+    gap: 50px;
     margin-bottom: 50px;
+    margin-right: 150px;
+    margin-left: 150px;
 }
 .footer-1{
-
+    width: 40%;
 }
 .footer-2{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    width: 30%;
+    row-gap: 30px;
+}
+.footer-item{
 }
 .footer-3{
-
+    display: flex;
+    gap: 24px;
+    width: 10%;
+    justify-content: flex-start;
 }
+.footer-icon{
+    height: 40px;
+    width: 40px;
+}
+
+/* responsive */
+
+@media screen and (max-width: 576px) {
+  .footer {
+    flex-direction: column;
+    gap: 30px;
+    margin: 0 20px 40px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-1,
+  .footer-2,
+  .footer-3 {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .footer-2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+  }
+
+  .footer-3 {
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .footer-icon {
+    height: 36px;
+    width: 36px;
+  }
+}
+
+
