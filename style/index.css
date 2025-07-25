@@ -34,6 +34,9 @@ nav{
     font-weight: 600;
     color: rgba(233, 90, 8, 1);
 }
+.website-name{
+    color: rgba(134, 168, 202, 0.725);
+}
 
 
 /* shared style */
@@ -159,19 +162,71 @@ nav{
     border-radius: 10px;
     margin-bottom: 120px;
 }
-.collage-photo{
-    width: 100%;
-    height: 100%;
-    /* object-fit: cover; */
-    border-radius: 10px;
-}
 .collage-1{
-    margin-bottom: 15px;
+    border-radius: 20px;
+    background-image: url(../assets/deal-bloom.png);
+    height: 201px;
+    width: 367px;
+    margin-bottom: 20px;
+}
+.collage-1-title{
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: white;
+    padding-top: 80px;
+}
+.collage-1-subtitle{
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+    margin-left: 140px;
+}
+
+.collage-2{
+    border-radius: 20px;
+    background-image: url(../assets/deal-ana.png);
+    height: 201px;
+    width: 367px;
+}
+.collage-2-title{
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: white;
+    padding: 70px 0 0;
+}
+.collage-2-subtitle{
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+    margin-left: 140px;
 }
 .collage-3{
     border-radius: 20px;
+    background-image: url(../assets/deal-zabo.png);
+    height: 423px;
+    width: 753px;
 }
+.collage-3-title{
+    text-align: center;
+    margin-top: 180px;
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
+}
+.collage-3-subtitle{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: white;
+    margin-left: 300px;
+}
+
 /* colorful bunch styles */
+
 .colorful-bunch{
     display: grid;
     align-items: center;
@@ -179,12 +234,23 @@ nav{
     margin: auto;
     margin-bottom: 120px;
     background-image: url(../assets/news-letter-bg.png);
+    height: 533px;
 }
 
 .colorful-bunch-title{
     font-size: 2rem;
+    color: white;
+    font-weight: bold;
     text-align: center;
-    margin-bottom: 20px;
+    line-height: 0;
+    padding: 0;
+    margin-top: 200px;
+    margin-bottom: 0;
+}
+.colorful-bunch-form{
+    margin-top: 0;
+    margin-bottom: 150px;
+    gap: 0;
 }
 .btn-subscribe{
     background-color: rgba(233, 90, 8, 1);
@@ -202,4 +268,25 @@ input[type="email"]{
     border: 1px solid rgba(137, 135, 161, 1);
     width: 400px;
     margin-right: 10px;
+    background-color: white;
+}
+
+
+
+/* footer styles */
+
+.footer{
+    display: flex;
+    gap: 100px;
+    margin-bottom: 50px;
+}
+.footer-1{
+
+}
+.footer-2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.footer-3{
+
 }
